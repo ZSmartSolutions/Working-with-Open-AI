@@ -1,0 +1,223 @@
+[
+    {
+        "test_name": "Open Router Tutor",
+        "model": "openrouter/free",
+        "system_prompt": "You are a helpful tutor who explains complex topics with analogies.",
+        "user_input": "What is machine learning?"
+       
+    },
+    
+    {
+        "test_name": "pirate",
+        "model": "openrouter/free",
+        "system_prompt": "You are a pirate who answers questions in pirate speak",
+        "user_input": "What is machine learning?"
+       
+    },
+
+    {
+        "test_name": "Professional Consultant",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional consultant who gives business advice",
+        "user_input": "What is machine learning?"
+       
+    },
+
+    {
+    "test_name": "Conversation Memory",
+    "model": "openrouter/free",
+    "system_prompt": "You are a helpful assistant. Remember information from the conversation history and use it when answering questions.",
+    "user_input": [
+        {
+            "role": "user",
+            "content": "My favorite color is blue."
+        },
+        {
+            "role": "assistant",
+            "content": "That's nice! Blue is a beautiful color. It's often associated with calmness and serenity."
+        },
+        {
+            "role": "user",
+            "content": "What are some things in nature that match my favorite color?"
+        }
+    ]
+   },
+
+   {
+        "test_name": "Professional Consultant Low Temperature Turn 1",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional consultant who gives business advice",
+        "user_input": "What is machine learning?",
+        "parameters": {
+            "temperature": 0.1
+        }
+       
+    },
+
+    {
+        "test_name": "Professional Consultant Low Temperature Turn 2",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional consultant who gives business advice",
+        "user_input": "What is machine learning?",
+        "parameters": {
+            "temperature": 0.1
+        }
+       
+    },
+
+    {
+        "test_name": "Professional Consultant High Temperature Turn 1",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional consultant who gives business advice",
+        "user_input": "What is machine learning?",
+        "parameters": {
+            "temperature": 0.9
+        }
+       
+    },
+
+    {
+        "test_name": "Professional Consultant High Temperature Turn 2",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional consultant who gives business advice",
+        "user_input": "What is machine learning?",
+        "parameters": {
+            "temperature": 0.9
+        }
+       
+    },
+
+
+    {
+        "test_name": "Temperature Low - 0.1",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant. Provide practical business advice.",
+        "user_input": "Suggest three strategies a company can use to reduce customer churn.",
+        "parameters": {
+            "temperature": 0.1
+        }
+    },
+    {
+        "test_name": "Temperature Medium - 0.5",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant. Provide practical business advice.",
+        "user_input": "Suggest three strategies a company can use to reduce customer churn.",
+        "parameters": {
+            "temperature": 0.5
+        }
+    },
+    {
+        "test_name": "Temperature High - 0.9",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant. Provide practical business advice.",
+        "user_input": "Suggest three strategies a company can use to reduce customer churn.",
+        "parameters": {
+            "temperature": 0.9
+        }
+    },
+    {
+        "test_name": "Reasoning Low",
+        "model": "openrouter/free",
+        "system_prompt": "You are a business analyst. Analyze the problem and provide recommendations.",
+        "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the situation and suggest ways to reduce churn.",
+        "parameters": {
+            "reasoning": {
+                "effort": "low"
+            }
+        }
+    },
+    {
+        "test_name": "Reasoning Medium",
+        "model": "openrouter/free",
+        "system_prompt": "You are a business analyst. Analyze the problem and provide recommendations.",
+        "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the situation and suggest ways to reduce churn.",
+        "parameters": {
+            "reasoning": {
+                "effort": "medium"
+            }
+        }
+    },
+    {
+        "test_name": "Reasoning High",
+        "model": "openrouter/free",
+        "system_prompt": "You are a business analyst. Analyze the problem and provide recommendations.",
+        "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the situation and suggest ways to reduce churn.",
+        "parameters": {
+            "reasoning": {
+                "effort": "high"
+            }
+        }
+    },
+    {
+        "test_name": "Verbosity Low",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant. Answer clearly and accurately.",
+        "user_input": "Explain how machine learning can help a business reduce customer churn.",
+        "parameters": {
+            "verbosity": "low"
+        }
+    },
+    {
+        "test_name": "Verbosity Medium",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant. Answer clearly and accurately.",
+        "user_input": "Explain how machine learning can help a business reduce customer churn.",
+        "parameters": {
+            "verbosity": "medium"
+        }
+    },
+    {
+        "test_name": "Verbosity High",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant. Answer clearly and accurately.",
+        "user_input": "Explain how machine learning can help a business reduce customer churn.",
+        "parameters": {
+            "verbosity": "high"
+        }
+    },
+    {
+        "test_name": "Combined - Fast and Concise",
+        "model": "openrouter/free",
+        "system_prompt": "You are a professional business consultant.",
+        "user_input": "A company is experiencing high customer churn. Recommend an action plan.",
+        "parameters": {
+            "temperature": 0.2,
+            "reasoning": {
+                "effort": "low"
+            },
+            "verbosity": "low"
+        }
+    },
+    {
+        "test_name": "Combined - Deep Business Analysis",
+        "model": "openrouter/free",
+        "system_prompt": "You are a senior business strategy consultant.",
+        "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the causes of churn, identify business risks, and recommend a detailed action plan.",
+        "parameters": {
+            "temperature": 0.2,
+            "reasoning": {
+                "effort": "high"
+            },
+            "verbosity": "high"
+        }
+    },
+    
+    {
+        "test_name": "Combined - Creative Brainstorming",
+        "model": "openrouter/free",
+        "system_prompt": "You are a creative business innovation consultant.",
+        "user_input": "Generate innovative and unconventional strategies to improve customer retention for an online subscription business.",
+        "parameters": {
+            "temperature": 0.9,
+            "reasoning": {
+                "effort": "medium"
+            },
+            "verbosity": "high"
+        }
+    }
+
+
+
+
+
+]
