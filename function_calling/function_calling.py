@@ -5,7 +5,7 @@ import json
 import os
 
 
-# 1. Initialize OpenRouter client
+# 1. Initialize for model configuration
 def initialize_client():
     return OpenAI(
         base_url="http://localhost:11434/v1",
@@ -62,6 +62,24 @@ def main():
 
     input_messages = [
         {
+        "role": "system",
+        "content": """
+        You are a personalized recommendation assistant.
+
+        Rules:
+        1. When a user requests personalized recommendations,
+           you MUST retrieve their stored preferences using
+           the get_user_preferences function.
+
+        2. Extract the user_id and category from the user's message.
+
+        3. Never ask the user to provide preferences if they
+           have already provided their user_id.
+
+        4. Never invent or assume stored preferences.
+        """
+       },
+        {
             "role": "user",
             "content": "I'm user123. Can you recommend some restaurants based on my food preferences?"
         }
@@ -77,11 +95,11 @@ def main():
             messages=input_messages,
             tools=tools,
             tool_choice={
-                "type": "function",
-                "function": {
-                    "name": "get_user_preferences"
-            }
-    }
+              "type": "function",
+               "function": {
+                  "name": "get_user_preferences"
+                }
+         }
         )
 
         # Check whether choices were returned
