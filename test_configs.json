@@ -120,10 +120,11 @@
         "model": "openrouter/free",
         "system_prompt": "You are a business analyst. Analyze the problem and provide recommendations.",
         "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the situation and suggest ways to reduce churn.",
-        "parameters": {
+        "parameters": {},
+         "extra_body": {
             "reasoning": {
                 "effort": "low"
-            }
+        }
         }
     },
     {
@@ -131,7 +132,8 @@
         "model": "openrouter/free",
         "system_prompt": "You are a business analyst. Analyze the problem and provide recommendations.",
         "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the situation and suggest ways to reduce churn.",
-        "parameters": {
+        "parameters": {},
+        "extra_body": {
             "reasoning": {
                 "effort": "medium"
             }
@@ -142,7 +144,8 @@
         "model": "openrouter/free",
         "system_prompt": "You are a business analyst. Analyze the problem and provide recommendations.",
         "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the situation and suggest ways to reduce churn.",
-        "parameters": {
+        "parameters": {},
+        "extra_body": {   
             "reasoning": {
                 "effort": "high"
             }
@@ -162,7 +165,8 @@
         "model": "openrouter/free",
         "system_prompt": "You are a professional business consultant. Answer clearly and accurately.",
         "user_input": "Explain how machine learning can help a business reduce customer churn.",
-        "parameters": {
+        "parameters": {},
+         "extra_body": {
             "verbosity": "medium"
         }
     },
@@ -171,50 +175,57 @@
         "model": "openrouter/free",
         "system_prompt": "You are a professional business consultant. Answer clearly and accurately.",
         "user_input": "Explain how machine learning can help a business reduce customer churn.",
-        "parameters": {
+        "parameters": {},
+         "extra_body": {
             "verbosity": "high"
         }
     },
     {
-        "test_name": "Combined - Fast and Concise",
+        "test_name": "Combined - Fast and Concise, reasonging low, verbosity low",
         "model": "openrouter/free",
         "system_prompt": "You are a professional business consultant.",
         "user_input": "A company is experiencing high customer churn. Recommend an action plan.",
         "parameters": {
-            "temperature": 0.2,
+            "temperature": 0.2
+        },
+         "extra_body": {
             "reasoning": {
                 "effort": "low"
-            },
+        },
             "verbosity": "low"
         }
     },
     {
-        "test_name": "Combined - Deep Business Analysis",
+        "test_name": "Combined - Deep Business Analysis, reasoning high, verbosity high",
         "model": "openrouter/free",
         "system_prompt": "You are a senior business strategy consultant.",
         "user_input": "A company has 10,000 customers and loses 800 customers every month. Analyze the causes of churn, identify business risks, and recommend a detailed action plan.",
         "parameters": {
-            "temperature": 0.2,
+            "temperature": 0.2
+        },
+         "extra_body": {
             "reasoning": {
                 "effort": "high"
-            },
+        },
             "verbosity": "high"
         }
     },
     
     {
-        "test_name": "Combined - Creative Brainstorming",
+        "test_name": "Combined - Creative Brainstorming, reasoning medium, verbosity high",
         "model": "openrouter/free",
         "system_prompt": "You are a creative business innovation consultant.",
         "user_input": "Generate innovative and unconventional strategies to improve customer retention for an online subscription business.",
         "parameters": {
-            "temperature": 0.9,
+            "temperature": 0.9
+        },
+        "extra_body": {
             "reasoning": {
                 "effort": "medium"
-            },
+        },
             "verbosity": "high"
         }
-    }
+}
 
 
 
