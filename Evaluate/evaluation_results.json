@@ -1,0 +1,122 @@
+[
+    {
+        "ticket_text": "My monitor won't turn on - help!",
+        "correct_label": "Hardware",
+        "predicted_label": "Hardware",
+        "passed": true
+    },
+    {
+        "ticket_text": "Keyboard keys are sticking and not responding",
+        "correct_label": "Hardware",
+        "predicted_label": "Hardware",
+        "passed": true
+    },
+    {
+        "ticket_text": "Laptop battery drains very quickly",
+        "correct_label": "Hardware",
+        "predicted_label": "Hardware",
+        "passed": true
+    },
+    {
+        "ticket_text": "Printer is making weird noises and not printing",
+        "correct_label": "Hardware",
+        "predicted_label": "Hardware",
+        "passed": true
+    },
+    {
+        "ticket_text": "Mouse cursor jumps around randomly",
+        "correct_label": "Hardware",
+        "predicted_label": "Software",
+        "passed": false
+    },
+    {
+        "ticket_text": "Excel crashes every time I try to open it",
+        "correct_label": "Software",
+        "predicted_label": "Software",
+        "passed": true
+    },
+    {
+        "ticket_text": "Can't install the new antivirus update",
+        "correct_label": "Software",
+        "predicted_label": "Software",
+        "passed": true
+    },
+    {
+        "ticket_text": "Email client won't sync with server",
+        "correct_label": "Software",
+        "predicted_label": "Software",
+        "passed": true
+    },
+    {
+        "ticket_text": "Getting blue screen errors on Windows",
+        "correct_label": "Software",
+        "predicted_label": "Software",
+        "passed": true
+    },
+    {
+        "ticket_text": "Chrome browser running very slowly",
+        "correct_label": "Software",
+        "predicted_label": "Software",
+        "passed": true
+    },
+    {
+        "ticket_text": "How do I request vacation time?",
+        "correct_label": "Other",
+        "predicted_label": "Other",
+        "passed": true
+    },
+    {
+        "ticket_text": "What's the WiFi password for the guest network?",
+        "correct_label": "Other",
+        "predicted_label": "Other",
+        "passed": true
+    },
+    {
+        "ticket_text": "Need access to the accounting shared folder",
+        "correct_label": "Other",
+        "predicted_label": "Other",
+        "passed": true
+    },
+    {
+        "ticket_text": "Where can I find the office supply ordering form?",
+        "correct_label": "Other",
+        "predicted_label": "Other",
+        "passed": true
+    },
+    {
+        "ticket_text": "Best restaurants near the office?",
+        "correct_label": "Other",
+        "predicted_label": "Other",
+        "passed": true
+    },
+    {
+        "ticket_text": "My laptop won't connect to WiFi",
+        "correct_label": "Hardware",
+        "predicted_label": "Hardware",
+        "passed": true
+    },
+    {
+        "ticket_text": "Can't log into the company portal",
+        "correct_label": "Software",
+        "predicted_label": "Other",
+        "passed": false
+    },
+    {
+        "ticket_text": "Desk phone not working",
+        "correct_label": "Hardware",
+        "predicted_label": "Hardware",
+        "passed": true
+    },
+    {
+        "ticket_text": "Forgot my password",
+        "correct_label": "Software",
+        "predicted_label": "Software",
+        "passed": true
+    },
+    {
+        "ticket_text": "Need new headphones",
+        "correct_label": "Other",
+        "predicted_label": "Hardware",
+        "passed": false
+    }
+]
